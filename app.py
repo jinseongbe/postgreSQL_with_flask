@@ -5,11 +5,17 @@ from todo import Todo
 from account import Test_account
 
 app = Flask(__name__)
-api = Api(app)
+api = Api(
+    app,
+    version='0.1',
+    title="jinseongbe's API Study Server",
+    description="for study, API Server!",
+    terms_url="/",
+    contact="jinseongbe@gmail.com",
+    license="MIT"
+)
 api.add_namespace(Test_account, '/account')
 api.add_namespace(Todo, '/todos')
-
-
 
 
 
