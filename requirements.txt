@@ -1,0 +1,4 @@
+flask
+python-dotenv # 디버그 모드를 위해 설치해주는 라이브러리
+psycopg2-binary # postgresql 연동을 위한 라이브러리
+flask-restx # flask swagger 문서화 하기 위한 라이브러리
