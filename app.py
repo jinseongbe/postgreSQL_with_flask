@@ -3,6 +3,7 @@ from flask_restx import Api, Resource
 
 from todo import Todo
 from account import Test_account
+from elephantSQL import Ele_server
 
 app = Flask(__name__)
 api = Api(
@@ -16,6 +17,7 @@ api = Api(
 )
 api.add_namespace(Test_account, '/account')
 api.add_namespace(Todo, '/todos')
+api.add_namespace(Ele_server, '/ele')
 
 
 
